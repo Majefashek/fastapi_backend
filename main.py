@@ -76,7 +76,7 @@ def send_push_message(message: str):
                 "body": message,
             }),
             vapid_private_key=VAPID_PRIVATE_KEY,
-            vapid_claims={"sub": "mailto:admin@example.com"},
+            vapid_claims={"sub": "abdullahishuaibumaje@gmail.com"},
         )
         print(f"✅ Push sent: {message}")
     except WebPushException as ex:
