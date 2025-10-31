@@ -1,6 +1,14 @@
 # Base image
 FROM python:3.11-slim
 
+# -------------------------------------------------------------------
+# 💡 THE FIX FOR DOCKER
+# This environment variable forces Python to print logs instantly
+# instead of holding them in a buffer. This is essential for
+# seeing logs in real-time.
+# -------------------------------------------------------------------
+ENV PYTHONUNBUFFERED 1
+
 # Set working directory
 WORKDIR /app
 
